@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    width: 480px;
+    height: 3593px;
+    /* border: solid; */
+    margin: auto; /* centrar en la página */
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 0;
+}
+
+header img {
+    width: 110px;
+    height: 25px;
+
+}
+
+header .menuDesplegable {
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+/* contenerdor Evento */
+.contenedorEvento {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+}
+.contenedorEvento .tituloEvento {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    text-align: right;
+    color: #232C50;
+    padding-top: 10%;
+}
+
+.contenedorEvento .infoEvento {
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+.contenedorEvento .botonEvento {
+    position: relative;
+    left: 30%;
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    padding: 3% 12%;
+}
+
+/* contenedor info tenistas */
+.infoTenistas {
+    margin-top: 1.5rem;
+    background-color: #3CDDF3;
+    padding: 5% 3%;
+}
+.infoTenistas .tituloInfoTenistas {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 5% 0%;
+}
+
+.infoTenistas .textoInfoTenistas {
+    color: white;
+}
+
+/* contenedor contenido */
+.contenido {
+
+    margin-left: 3%;
+    margin-top: 10%;
+}
+.contenidoTitulo {
+    display: flex;
+}
+
+.contenidoTitulo button {
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    padding: 2% 5%;
+    font-weight: bold;
+}
+
+.contenidoTitulo .marcoTexto {
+    background-color: rgba(139, 72, 191, 0.30);
+    padding-left: 5%;
+    margin-left: -5%;
+    width: 100%;
+}
+
+.contenidoTitulo p {
+    position: relative;
+    top: 12px; 
+    left: 3px;   
+    font-weight: bold;
+    padding-left: 5%;
+    color: #323851;
+}
+
+.contenidoTexto {
+    padding: 5% 0 ;
+    line-height: 2rem;
+}
+
+/* contenedor mes */
+
+.contenedorMes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorMes h2 {
+    font-weight: bold;
+}
+
+.contenedorMes img {
+    border-radius: 50%;
+    width: 20%;
+    margin: 5%;
+}
+
+.contenedorMes .tituloMes{
+    font-weight: bold;
+}
+
+.contenedorMes .textoMes {
+    margin: 5%;
+}
+.botonMes {
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    padding: 3% 12%;
+}
+
+/* contenedor equipos */
+.equipos {
+    display: flex;
+    flex-direction: column;
+    background-color: #3CDDF3;
+    align-items: center;
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.equipos h2 {
+    width: 55%;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.equipos .botonEquipos{
+    background-color: #232C50;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 3% 12%;
+    margin-top: 10%;
+}
+
+/* formulario */
+form {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1E1E26;
+    padding: 10% 0;
+}
+
+form .botonEnvio {
+    background-color: #8B48BF;
+    color: white;
+    border-radius: 50px;
+    padding: 3% 8%;
+}
+
+form #email {
+    border-radius: 50px;
+    width: 60%;
+}
+
+footer .enlaces {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E1E26;
+}
+
+.enlaces a {
+    color: white;
+}
+footer li {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.iconos {
+    display: flex;
+    background-color: #1E1E26;
+    justify-content: space-around;
+    margin: 10%;
+}
+
+footer {
+    background-color: #1E1E26;
+}
+
+.finFooter img {
+    width: 110px;
+    height: 40px;
+    margin: auto;
+}
+.finFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #8C8C94;
+    font-size: 1rem;
+    margin: 10%;
+}
+
+.finFooter p {
+    margin: 10%;
+}
+
