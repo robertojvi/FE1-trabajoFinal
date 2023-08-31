@@ -121,17 +121,20 @@ header .menuDesplegable {
 
 /* contenedor mes */
 
-.contenedorMes {
+.contenedorMes, .contenedorMes div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .contenedorMes h2 {
+    text-align: center;
     font-weight: bold;
 }
 
-.contenedorMes img {
+.contenedorMes div img {
+    position: relative;
+    top: -60px;
     border-radius: 50%;
     width: 20%;
     margin: 5%;
@@ -142,15 +145,36 @@ header .menuDesplegable {
 }
 
 .contenedorMes .textoMes {
-    margin: 5%;
+    margin: 0 5%;
+    text-align: center;
+    padding-bottom: 10px ;
 }
 .botonMes {
+    text-align: center;
     background-color: #8B48BF;
     color: white;
     border-radius: 50px;
     padding: 3% 12%;
 }
+.botonMes:hover{
+    font-weight: bold;
+}
+.marco {
+    position: relative;
+    top: 80px;
+    background-color: #FAFAFA;
+    margin-bottom: 100px;
+}
 
+/* ocultar elementos */
+.ocultar {
+    display: none;
+}
+
+/* mostrar elementos ocultos al hacer hover -- No funciona, Revisar*/
+.botonMes:hover .ocultar {
+    display: block;
+}
 /* contenedor equipos */
 .equipos {
     display: flex;
@@ -197,6 +221,7 @@ form #email {
     width: 60%;
 }
 
+/* footer */
 footer .enlaces {
     display: flex;
     justify-content: space-around;
