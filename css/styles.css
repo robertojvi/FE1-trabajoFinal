@@ -168,12 +168,14 @@ header .menuDesplegable {
 
 /* ocultar elementos */
 .ocultar {
-    display: none;
+    position: absolute;
+    top: -10000px;
 }
 
-/* mostrar elementos ocultos al hacer hover -- No funciona, Revisar*/
-.botonMes:hover .ocultar {
-    display: block;
+/* mostrar elementos ocultos al hacer hover */
+#oculto:hover .ocultar {
+    position: static;
+    top: 0;
 }
 /* contenedor equipos */
 .equipos {
