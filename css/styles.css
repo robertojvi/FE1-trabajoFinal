@@ -416,4 +416,25 @@ footer {
         padding: 2% 8%;
         margin-top: 3%;
     }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .formText {
+        color: #8C8C94;
+        width: 20%;
+        margin-right: 10%;
+    }
+    footer .iconos i{
+        padding: 0 15px;
+        margin-top: 50%;
+    }
+
+    footer .enlaces {
+        width: 30%;
+        justify-content: left;
+    }
 }
