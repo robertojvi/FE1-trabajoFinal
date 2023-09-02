@@ -163,9 +163,12 @@ header .menuDesplegable {
     border-radius: 50px;
     padding: 3% 12%;
 }
+
+/* Pseudo clase */
 .botonMes:hover{
     font-weight: bold;
 }
+
 .marco {
     position: relative;
     top: 80px;
@@ -179,7 +182,7 @@ header .menuDesplegable {
     top: -10000px;
 }
 
-/* mostrar elementos ocultos al hacer hover */
+/* mostrar elementos ocultos al hacer hover, se usa pseudo clase */
 #oculto:hover .ocultar {
     position: static;
     top: 0;
@@ -277,13 +280,18 @@ footer {
     margin: 10%;
 }
 
+/* Estilos para sitio Desktop */
+
 @media screen and (min-width: 1000px) {
+
+    /* Cambio de tamaño de body */
     body { width: 1440px;
         height: 2639px;
         /* border: solid; */
         margin: auto;
     }
 
+    /* header y navbar */
     #navbar, #navbar a {
         display: flex;
         list-style: none;
@@ -300,6 +308,7 @@ footer {
         padding: 1% 3%;
     }
 
+    /* Oculta elementos */
     .ocultar {
         position: static;
         top: 0;
@@ -310,6 +319,7 @@ footer {
             top: -10000px;
     }
 
+    /* cambios en elementos evento */
     .contenedorEvento {
         display: flex;
         flex-direction: row;
@@ -320,6 +330,8 @@ footer {
     .contEvento {
         width: 40%;
     }
+
+    /* cambios en elementos sección tenistas */
     .infoTenistas {
         display: flex;
         justify-content: center;
@@ -350,6 +362,7 @@ footer {
         background-color: rgba(255, 255, 255, 0);
     }
 
+    /* sección jugadores */
     .playersContainer {
         display: flex;
 
@@ -388,6 +401,7 @@ footer {
         
     }
 
+    /* sección equipos */
     .equipos {
         background-color: #8B48BF;
         width: 100%;
@@ -416,6 +430,8 @@ footer {
         padding: 2% 8%;
         margin-top: 3%;
     }
+
+    /* cambios en footer */
     footer {
         display: flex;
         flex-direction: row;
@@ -438,6 +454,7 @@ footer {
         justify-content: left;
     }
 
+    /* Pseudo Elemento  */
     .textAfter::after {
         content: " --> RV / JF";
     }
