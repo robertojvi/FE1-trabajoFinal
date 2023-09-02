@@ -194,8 +194,10 @@ header .menuDesplegable {
     margin-top: 10%;
 }
 
-.equipos h2 {
-    width: 55%;
+.tituloEquipos {
+    position: relative;
+    left: 10%;
+    width: 80%;
     text-align: center;
     font-weight: bold;
     color: #FFFFFF;
@@ -329,5 +331,89 @@ footer {
     .infoTenistas .textoInfoTenistas, .infoTenistas .tituloInfoTenistas {
         width: 40%;
         padding: 2% 0;
+    }
+
+    .marcoContenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenido {
+        width: 50%;
+        padding: 0;
+        margin: 5% 0 0 0;
+    }
+    .contenidoTitulo .marcoTexto {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .playersContainer {
+        display: flex;
+
+    }
+    .marcoDesk {
+        text-align: center;
+        position: relative;
+        top: 80px;
+        background-color: #FAFAFA;
+        margin: 5px;
+    }
+    .imgMesDesk {
+
+            position: relative;
+            top: -60px;
+            border-radius: 50%;
+            width: 20%;
+            margin: 5%;
+    }
+    .tituloMesDesk {
+        font-weight: bold;
+    }
+    .playerMes h2{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .playerMes button {
+        margin-top: 10%;
+        margin-left: 46%;
+        background-color: #8B48BF;
+        color: white;
+        border-radius: 50px;
+        padding: 1% 3%;
+
+        
+    }
+
+    .equipos {
+        background-color: #8B48BF;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3% 0 0 0;
+        height: 10%;
+    }
+    .equiposDesk {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equiposDesk .tituloEquipos {
+        position: static;
+        width: 100%;
+    }
+
+    .equipos .botonEquipos{
+        background-color: white;
+        color: #8B48BF;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 2% 8%;
+        margin-top: 3%;
     }
 }
