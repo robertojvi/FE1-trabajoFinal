@@ -437,4 +437,8 @@ footer {
         width: 30%;
         justify-content: left;
     }
+
+    .textAfter::after {
+        content: " --> RV / JF";
+    }
 }
