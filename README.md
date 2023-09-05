@@ -10,7 +10,7 @@
 # Estilos para cambio entre versión móvil y desktop 
 
 
-# Juliana Forero
+# Juliana Forero:
 # Diseño y estructura general de sitio móvil y desktop
 # Diseño y desarrollo para desktop 
 # Comentarios para documentación de código

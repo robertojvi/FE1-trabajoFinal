@@ -141,7 +141,7 @@ header .menuDesplegable {
 
 .contenedorMes div img {
     position: relative;
-    top: -60px;
+    bottom: 60px;
     border-radius: 50%;
     width: 20%;
     margin: 5%;
