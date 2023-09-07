@@ -7,9 +7,10 @@
 body {
     width: 480px;
     height: 3593px;
-    /* border: solid; */
-    margin: auto; /* centrar en la página */
+    margin: auto;
+    /* centrar en la página */
 }
+
 /* header */
 header {
     display: flex;
@@ -31,10 +32,11 @@ header .menuDesplegable {
 }
 
 .botoncontacto {
+    text-align: center;
     background-color: #8B48BF;
     color: white;
     border-radius: 50px;
-    padding: 3% 10%;
+    /* padding: 2% 8%; */
 }
 
 /* contenerdor Evento */
@@ -46,6 +48,7 @@ header .menuDesplegable {
     align-items: center;
     width: 83%;
 }
+
 .contenedorEvento .tituloEvento {
     font-size: 3rem;
     line-height: 3rem;
@@ -75,6 +78,7 @@ header .menuDesplegable {
     background-color: #3CDDF3;
     padding: 5% 3%;
 }
+
 .infoTenistas .tituloInfoTenistas {
     font-size: 2.5rem;
     line-height: 2.5rem;
@@ -87,12 +91,18 @@ header .menuDesplegable {
     color: white;
 }
 
+.textoInfoTenistas::after {
+    content: "Manage provides all the functionality you teas needs, without the complexity. Our software is tailor-made for modern digital product teams";
+}
+
+
 /* contenedor contenido */
 .contenido {
 
     margin-left: 3%;
     margin-top: 10%;
 }
+
 .contenidoTitulo {
     display: flex;
 }
@@ -114,21 +124,22 @@ header .menuDesplegable {
 
 .contenidoTitulo p {
     position: relative;
-    top: 12px; 
-    left: 3px;   
+    top: 12px;
+    left: 3px;
     font-weight: bold;
     padding-left: 5%;
     color: #323851;
 }
 
 .contenidoTexto {
-    padding: 5% 0 ;
+    padding: 5% 0;
     line-height: 2rem;
 }
 
 /* contenedor mes */
 
-.contenedorMes, .contenedorMes div {
+.contenedorMes,
+.contenedorMes div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,15 +158,16 @@ header .menuDesplegable {
     margin: 5%;
 }
 
-.contenedorMes .tituloMes{
+.contenedorMes .tituloMes {
     font-weight: bold;
 }
 
 .contenedorMes .textoMes {
     margin: 0 5%;
     text-align: center;
-    padding-bottom: 10px ;
+    padding-bottom: 10px;
 }
+
 .botonMes {
     text-align: center;
     background-color: #8B48BF;
@@ -165,7 +177,7 @@ header .menuDesplegable {
 }
 
 /* Pseudo clase */
-.botonMes:hover{
+.botonMes:hover {
     font-weight: bold;
 }
 
@@ -187,6 +199,7 @@ header .menuDesplegable {
     position: static;
     top: 0;
 }
+
 /* contenedor equipos */
 .equipos {
     display: flex;
@@ -206,7 +219,7 @@ header .menuDesplegable {
     color: #FFFFFF;
 }
 
-.equipos .botonEquipos{
+.equipos .botonEquipos {
     background-color: #232C50;
     color: #FFFFFF;
     font-weight: bold;
@@ -245,6 +258,7 @@ footer .enlaces {
 .enlaces a {
     color: white;
 }
+
 footer li {
     list-style-type: none;
     line-height: 2rem;
@@ -266,6 +280,7 @@ footer {
     height: 40px;
     margin: auto;
 }
+
 .finFooter {
     display: flex;
     flex-direction: column;
@@ -282,17 +297,17 @@ footer {
 
 /* Estilos para sitio Desktop */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
 
     /* Cambio de tamaño de body */
-    body { width: 1440px;
-        height: 2639px;
-        /* border: solid; */
+    body {
+        width: 1440px;
         margin: auto;
     }
 
     /* header y navbar */
-    #navbar, #navbar a {
+    #navbar,
+    #navbar a {
         display: flex;
         list-style: none;
         justify-content: space-around;
@@ -314,9 +329,10 @@ footer {
         top: 0;
     }
 
-    #imgMenu, .ocultaDesk {
-            position: absolute;
-            top: -10000px;
+    #imgMenu,
+    .ocultaDesk {
+        position: absolute;
+        top: -10000px;
     }
 
     /* cambios en elementos evento */
@@ -324,9 +340,11 @@ footer {
         display: flex;
         flex-direction: row;
     }
+
     .contenedorEvento img {
         width: 60%;
     }
+
     .contEvento {
         width: 40%;
     }
@@ -340,9 +358,15 @@ footer {
         background-color: #8B48BF;
         padding: 0;
     }
-    .infoTenistas .textoInfoTenistas, .infoTenistas .tituloInfoTenistas {
+
+    .infoTenistas .textoInfoTenistas,
+    .infoTenistas .tituloInfoTenistas {
         width: 40%;
         padding: 2% 0;
+    }
+
+    .textoInfoTenistas::after {
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
     }
 
     .marcoContenido {
@@ -358,6 +382,7 @@ footer {
         padding: 0;
         margin: 5% 0 0 0;
     }
+
     .contenidoTitulo .marcoTexto {
         background-color: rgba(255, 255, 255, 0);
     }
@@ -367,6 +392,7 @@ footer {
         display: flex;
 
     }
+
     .marcoDesk {
         text-align: center;
         position: relative;
@@ -374,18 +400,21 @@ footer {
         background-color: #FAFAFA;
         margin: 5px;
     }
+
     .imgMesDesk {
 
-            position: relative;
-            top: -60px;
-            border-radius: 50%;
-            width: 20%;
-            margin: 5%;
+        position: relative;
+        top: -60px;
+        border-radius: 50%;
+        width: 20%;
+        margin: 5%;
     }
+
     .tituloMesDesk {
         font-weight: bold;
     }
-    .playerMes h2{
+
+    .playerMes h2 {
         font-weight: bold;
         text-align: center;
     }
@@ -398,7 +427,7 @@ footer {
         border-radius: 50px;
         padding: 1% 3%;
 
-        
+
     }
 
     /* sección equipos */
@@ -411,6 +440,7 @@ footer {
         margin: 3% 0 0 0;
         height: 10%;
     }
+
     .equiposDesk {
         display: flex;
         flex-direction: column;
@@ -422,7 +452,7 @@ footer {
         width: 100%;
     }
 
-    .equipos .botonEquipos{
+    .equipos .botonEquipos {
         background-color: white;
         color: #8B48BF;
         font-weight: bold;
@@ -444,18 +474,27 @@ footer {
         width: 20%;
         margin-right: 10%;
     }
-    footer .iconos i{
+
+    footer .iconos i {
         padding: 0 15px;
         margin-top: 50%;
     }
 
     footer .enlaces {
+        position: relative;
+        right: 100px;
         width: 30%;
-        justify-content: left;
+        justify-content: space-between;
+    }
+
+    .enlaces a:link,
+    .enlaces a:visited,
+    .enlaces a:active {
+        color: white;
     }
 
     /* Pseudo Elemento  */
     .textAfter::after {
-        content: " --> RV / JF";
+        content: " All Rights Reserved";
     }
 }
